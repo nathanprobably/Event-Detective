@@ -186,7 +186,7 @@ function minAttendance(events) {
 function maxAttendance(events) {
 
 
-    let eventAttendance = events.map(event => event.attendance); //<--maps the array with only the attendance numbers
+    let eventAttendance = events.map(event => event.attendance); //<--takes the existing array, pulls only the attendance numbers from the objects, and maps it as a new array to use in the equation
 
     let max = Math.max(...eventAttendance); //<--Math.max() takes the array and picks out the largest number among the set of numbers in the array
 
