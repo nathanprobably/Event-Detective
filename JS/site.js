@@ -332,7 +332,7 @@ function saveNewEvent() {
     //create an object from the input
     let formData = new FormData(newEventForm); //<--uses a class to get and value the input from the submitted form on the modal page
     let newEvent = Object.fromEntries(formData.entries()); //<--goes through the form data that has been collected and creates a new object where the property is named after the input in the form
-    
+
     //fix the formats of the data
     newEvent.attendance = parseInt(newEvent.attendance); //<--parses the attendance input from the form to make it an object instead of a string
     newEvent.date = new Date(newEvent.date).toLocaleDateString(); //<--transforms the date into a javascript-readable format from the input from the form
